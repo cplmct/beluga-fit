@@ -4,9 +4,6 @@
     "appVersionSource": "remote"
   },
   "build": {
-    "android": {
-      "image": "latest"
-    },
     "development": {
       "developmentClient": true,
       "distribution": "internal"
