@@ -8,12 +8,13 @@
   },
   "packageManager": "npm@10.8.2",
   "scripts": {
-    "start": "expo start",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
-    "web": "expo start --web",
-    "build:web": "expo export --platform web",
-    "type-check": "tsc --noEmit"
+	"start": "expo start",
+	"android": "expo run:android",
+	"ios": "expo run:ios",
+	"web": "expo start --web",
+	"build:web": "expo export --platform web",
+	"type-check": "tsc --noEmit",
+	"diagnose": "node -e \"console.log('expo:', require('expo/package.json').version); console.log('autolinking:', require('expo-modules-autolinking/package.json').version); console.log('prebuild-config:', require('@expo/prebuild-config/package.json').version); console.log('cli:', require('@expo/cli/package.json').version);\""
   },
   "dependencies": {
     "@expo/metro-runtime": "~3.2.3",
@@ -21,7 +22,7 @@
     "@react-navigation/native": "6.1.9",
     "@react-navigation/native-stack": "6.9.17",
     "@supabase/supabase-js": "^2.89.0",
-    "expo": "~51.0.28",
+    "expo": "51.0.28",
     "expo-build-properties": "~0.12.5",
     "expo-haptics": "~13.0.1",
     "expo-status-bar": "~1.12.1",
