@@ -2,7 +2,6 @@ module.exports = {
   name: "Beluga Fit",
   slug: "beluga-fit",
   version: "1.0.0",
-  sdkVersion: "51.0.0",
   orientation: "portrait",
   icon: "./assets/icon.png",
   userInterfaceStyle: "light",
@@ -35,7 +34,7 @@ module.exports = {
         android: {
           compileSdkVersion: 35,
           targetSdkVersion: 35,
-          kotlinVersion: "2.0.21"
+          kotlinVersion: "1.9.24"
         }
       }
     ]
