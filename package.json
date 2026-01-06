@@ -15,6 +15,7 @@
 	"build:web": "expo export --platform web",
 	"type-check": "tsc --noEmit",
 	"diagnose": "node -e \"console.log('expo:', require('expo/package.json').version); console.log('autolinking:', require('expo-modules-autolinking/package.json').version); console.log('prebuild-config:', require('@expo/prebuild-config/package.json').version); console.log('cli:', require('@expo/cli/package.json').version);\""
+	"prebuild": "npm run diagnose"
   },
   "dependencies": {
     "@expo/metro-runtime": "~3.2.3",
