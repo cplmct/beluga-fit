@@ -3,6 +3,9 @@
     "version": ">= 16.28.0",
     "appVersionSource": "remote"
   },
+  "hooks": {
+	"prebuild": "npm run diagnose"
+	},
   "build": {
     "development": {
       "developmentClient": true,
