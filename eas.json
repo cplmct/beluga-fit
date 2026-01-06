@@ -3,21 +3,27 @@
     "version": ">= 16.28.0",
     "appVersionSource": "remote"
   },
-  "hooks": {
-	"prebuild": "npm run diagnose"
-	},
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "hooks": {
+        "prebuild": "npm run diagnose"
+      }
     },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "hooks": {
+        "prebuild": "npm run diagnose"
+      }
     },
     "production": {
       "autoIncrement": true,
       "cache": {
         "disabled": true
+      },
+      "hooks": {
+        "prebuild": "npm run diagnose"
       }
     }
   },
