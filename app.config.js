@@ -37,7 +37,9 @@ module.exports = {
           kotlinVersion: "1.9.24"
         }
       }
-    ]
+    ],
+    "expo-font",
+    "expo-asset"
   ],
   web: {
     favicon: "./assets/favicon.png"
