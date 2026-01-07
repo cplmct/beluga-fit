@@ -35,8 +35,8 @@ module.exports = {
           compileSdkVersion: 35,
           targetSdkVersion: 35,
           kotlinVersion: "1.9.24",
-        gradlePluginVersion: "8.5.2",
-        javaVersion: "17"
+		  gradlePluginVersion: "8.5.2",
+		  javaVersion: "17"
         }
       }
     ],
